@@ -1,105 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800;900&family=Epilogue:wght@400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* MartProp design system — Navy Trust × Urbanist/Epilogue */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 210 33% 98%;
+    --foreground: 222 60% 11%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 222 60% 11%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 222 60% 11%;
 
-    --primary: 222.2 47.4% 11.2%;
+    /* Navy Trust palette */
+    --primary: 222 60% 15%;            /* deep navy #0f1b3d-ish */
     --primary-foreground: 210 40% 98%;
+    --primary-glow: 212 50% 40%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 213 35% 95%;
+    --secondary-foreground: 222 60% 15%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 213 30% 95%;
+    --muted-foreground: 215 20% 42%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 211 47% 43%;             /* mid blue #3b6fa0 */
+    --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --gold: 42 65% 55%;
+    --gold-foreground: 222 60% 15%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --success: 152 55% 38%;
+    --warning: 35 90% 55%;
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 0 0% 100%;
 
-    --radius: 0.5rem;
+    --border: 215 25% 88%;
+    --input: 215 25% 88%;
+    --ring: 211 47% 43%;
 
-    --sidebar-background: 0 0% 98%;
+    --radius: 0.875rem;
 
-    --sidebar-foreground: 240 5.3% 26.1%;
+    /* gradients & effects */
+    --gradient-hero: linear-gradient(135deg, hsl(222 65% 11%) 0%, hsl(215 55% 20%) 55%, hsl(211 47% 35%) 100%);
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent)));
+    --gradient-soft: linear-gradient(180deg, hsl(210 40% 99%), hsl(213 35% 96%));
+    --gradient-gold: linear-gradient(135deg, hsl(42 70% 60%), hsl(38 60% 45%));
 
-    --sidebar-primary: 240 5.9% 10%;
+    --shadow-elegant: 0 24px 60px -28px hsl(222 60% 15% / 0.35);
+    --shadow-card: 0 8px 28px -12px hsl(222 60% 15% / 0.12);
+    --shadow-glow: 0 0 0 1px hsl(211 47% 43% / 0.15), 0 18px 50px -20px hsl(211 47% 43% / 0.45);
 
-    --sidebar-primary-foreground: 0 0% 98%;
+    --transition-smooth: cubic-bezier(0.22, 1, 0.36, 1);
 
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* sidebar */
+    --sidebar-background: 222 60% 11%;
+    --sidebar-foreground: 210 30% 88%;
+    --sidebar-primary: 211 70% 60%;
+    --sidebar-primary-foreground: 222 60% 11%;
+    --sidebar-accent: 222 50% 18%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 222 45% 22%;
+    --sidebar-ring: 211 70% 60%;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
+    --background: 222 60% 7%;
+    --foreground: 210 35% 96%;
+    --card: 222 55% 10%;
+    --card-foreground: 210 35% 96%;
+    --popover: 222 55% 10%;
+    --popover-foreground: 210 35% 96%;
     --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --primary-foreground: 222 60% 11%;
+    --secondary: 222 40% 15%;
+    --secondary-foreground: 210 35% 96%;
+    --muted: 222 40% 15%;
+    --muted-foreground: 215 20% 65%;
+    --accent: 211 70% 60%;
+    --accent-foreground: 222 60% 11%;
+    --border: 222 40% 18%;
+    --input: 222 40% 18%;
+    --ring: 211 70% 60%;
   }
 }
 
 @layer base {
-  * {
-    @apply border-border;
-  }
-
+  * { @apply border-border; }
+  html { scroll-behavior: smooth; }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Epilogue', system-ui, sans-serif;
+    font-feature-settings: "ss01", "cv11";
+  }
+  h1, h2, h3, h4, h5 {
+    font-family: 'Urbanist', system-ui, sans-serif;
+    @apply tracking-tight;
   }
 }
+
+@layer utilities {
+  .font-display { font-family: 'Urbanist', sans-serif; }
+  .text-balance { text-wrap: balance; }
+  .glass {
+    background: hsl(0 0% 100% / 0.7);
+    backdrop-filter: blur(14px) saturate(140%);
+    -webkit-backdrop-filter: blur(14px) saturate(140%);
+  }
+  .glass-dark {
+    background: hsl(222 60% 11% / 0.55);
+    backdrop-filter: blur(14px) saturate(140%);
+  }
+  .bg-hero-gradient { background: var(--gradient-hero); }
+  .bg-primary-gradient { background: var(--gradient-primary); }
+  .bg-soft-gradient { background: var(--gradient-soft); }
+  .shadow-elegant { box-shadow: var(--shadow-elegant); }
+  .shadow-card-soft { box-shadow: var(--shadow-card); }
+  .shadow-glow { box-shadow: var(--shadow-glow); }
+  .transition-smooth { transition: all 0.4s var(--transition-smooth); }
+  .text-gradient {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .grid-bg {
+    background-image:
+      linear-gradient(hsl(var(--border) / 0.5) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(var(--border) / 0.5) 1px, transparent 1px);
+    background-size: 48px 48px;
+  }
+}
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+.animate-fade-up { animation: fade-up 0.7s var(--transition-smooth) both; }
+.animate-float { animation: float-slow 6s ease-in-out infinite; }
