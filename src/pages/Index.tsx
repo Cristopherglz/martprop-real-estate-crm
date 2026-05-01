@@ -72,6 +72,9 @@ const Index = () => {
         </div>
       </section>
 
+      {/* REELS */}
+      <ReelsRail />
+
       {/* SEGMENTOS */}
       <section className="py-24">
         <div className="container">

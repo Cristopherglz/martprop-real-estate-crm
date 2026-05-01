@@ -57,7 +57,7 @@ export default function SiteHeader() {
         </div>
 
         <button
-          className="md:hidden rounded-lg p-2 hover:bg-secondary"
+          className="hidden rounded-lg p-2 hover:bg-secondary"
           onClick={() => setOpen((v) => !v)}
           aria-label="Menú"
         >
