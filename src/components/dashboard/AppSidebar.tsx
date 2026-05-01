@@ -1,6 +1,6 @@
 import { NavLink, useLocation, Link } from "react-router-dom";
 import {
-  LayoutDashboard, Home, Users, BarChart3, MessageSquare,
+  LayoutDashboard, HouseHeart, Users, BarChart3, MessageSquare,
   Calendar, Settings, PlusCircle, LogOut, Building2, Video,
 } from "lucide-react";
 import {
@@ -11,7 +11,7 @@ import { cn } from "@/lib/utils";
 
 const main = [
   { to: "/dashboard", label: "Inicio", icon: LayoutDashboard, end: true },
-  { to: "/dashboard/propiedades", label: "Propiedades", icon: Home },
+  { to: "/dashboard/propiedades", label: "Propiedades", icon: HouseHeart },
   { to: "/reels", label: "Homees", icon: Video },
   { to: "/dashboard/leads", label: "Leads", icon: MessageSquare },
   { to: "/dashboard/agenda", label: "Agenda", icon: Calendar },

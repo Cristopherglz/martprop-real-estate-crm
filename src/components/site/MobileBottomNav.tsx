@@ -1,9 +1,9 @@
 import { Link, useLocation } from "react-router-dom";
-import { Home, Search, Video, PlusCircle, User } from "lucide-react";
+import { HouseHeart, Search, Video, PlusCircle, User } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const items = [
-  { to: "/", label: "Inicio", icon: Home, end: true },
+  { to: "/", label: "Inicio", icon: HouseHeart, end: true },
   { to: "/buscar", label: "Buscar", icon: Search },
   { to: "/dashboard/publicar", label: "Publicar", icon: PlusCircle, primary: true },
   { to: "/reels", label: "Homees", icon: Video },
