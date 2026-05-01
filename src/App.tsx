@@ -16,6 +16,7 @@ import DashboardProperties from "./pages/dashboard/DashboardProperties";
 import DashboardLeads from "./pages/dashboard/DashboardLeads";
 import DashboardStats from "./pages/dashboard/DashboardStats";
 import DashboardPublish from "./pages/dashboard/DashboardPublish";
+import MobileBottomNav from "./components/site/MobileBottomNav";
 
 const queryClient = new QueryClient();
 
