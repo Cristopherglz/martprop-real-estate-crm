@@ -4,6 +4,7 @@ import SiteHeader from "@/components/site/SiteHeader";
 import SiteFooter from "@/components/site/SiteFooter";
 import SearchBar from "@/components/site/SearchBar";
 import PropertyCard from "@/components/site/PropertyCard";
+import ReelsRail from "@/components/site/ReelsRail";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { properties } from "@/data/properties";
