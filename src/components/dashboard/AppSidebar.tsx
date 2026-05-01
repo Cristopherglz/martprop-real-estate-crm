@@ -1,7 +1,7 @@
 import { NavLink, useLocation, Link } from "react-router-dom";
 import {
   LayoutDashboard, Home, Users, BarChart3, MessageSquare,
-  Calendar, Settings, PlusCircle, LogOut, Building2,
+  Calendar, Settings, PlusCircle, LogOut, Building2, Video,
 } from "lucide-react";
 import {
   Sidebar, SidebarContent, SidebarGroup, SidebarGroupContent, SidebarGroupLabel,
@@ -12,6 +12,7 @@ import { cn } from "@/lib/utils";
 const main = [
   { to: "/dashboard", label: "Inicio", icon: LayoutDashboard, end: true },
   { to: "/dashboard/propiedades", label: "Propiedades", icon: Home },
+  { to: "/reels", label: "Reels", icon: Video },
   { to: "/dashboard/leads", label: "Leads", icon: MessageSquare },
   { to: "/dashboard/agenda", label: "Agenda", icon: Calendar },
   { to: "/dashboard/estadisticas", label: "Estadísticas", icon: BarChart3 },

@@ -9,6 +9,7 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Search from "./pages/Search";
 import PropertyDetail from "./pages/PropertyDetail";
+import Reels from "./pages/Reels";
 import DashboardLayout from "./components/dashboard/DashboardLayout";
 import DashboardHome from "./pages/dashboard/DashboardHome";
 import DashboardProperties from "./pages/dashboard/DashboardProperties";
@@ -28,6 +29,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/buscar" element={<Search />} />
           <Route path="/propiedad/:id" element={<PropertyDetail />} />
+          <Route path="/reels" element={<Reels />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
 
