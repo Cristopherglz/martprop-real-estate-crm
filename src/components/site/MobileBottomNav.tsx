@@ -6,7 +6,7 @@ const items = [
   { to: "/", label: "Inicio", icon: Home, end: true },
   { to: "/buscar", label: "Buscar", icon: Search },
   { to: "/dashboard/publicar", label: "Publicar", icon: PlusCircle, primary: true },
-  { to: "/reels", label: "Reels", icon: Video },
+  { to: "/reels", label: "Homees", icon: Video },
   { to: "/login", label: "Cuenta", icon: User },
 ];
 
@@ -33,7 +33,7 @@ export default function MobileBottomNav() {
                 <li key={it.to} className="flex items-center justify-center">
                   <Link
                     to={it.to}
-                    className="grid h-12 w-12 -mt-6 place-items-center rounded-2xl bg-primary-gradient text-primary-foreground shadow-elegant hover:scale-105 transition-smooth"
+                    className="grid h-12 w-12 place-items-center rounded-2xl bg-primary-gradient text-primary-foreground shadow-elegant hover:scale-105 transition-smooth mt-0 my-[20px] mb-0"
                     aria-label={it.label}
                   >
                     <it.icon className="h-5 w-5" />

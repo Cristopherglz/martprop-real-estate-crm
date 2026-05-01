@@ -50,7 +50,7 @@ export default function Reels() {
   };
 
   const handlePublish = () => {
-    toast.success("¡Reel publicado!", { description: "Tu video aparecerá pronto en el feed." });
+    toast.success("¡Homee publicado!", { description: "Tu video aparecerá pronto en el feed." });
     setUploadOpen(false);
     setFile(null);
   };
@@ -64,7 +64,7 @@ export default function Reels() {
         </Link>
         <div className="flex items-center gap-2 font-display font-bold text-lg">
           <Video className="h-5 w-5 text-[hsl(var(--gold))]" />
-          <span>Reels</span>
+          <span>Homees</span>
         </div>
         <Dialog open={uploadOpen} onOpenChange={setUploadOpen}>
           <DialogTrigger asChild>
@@ -75,7 +75,7 @@ export default function Reels() {
           <DialogContent className="bg-card text-foreground max-w-lg">
             <DialogHeader>
               <DialogTitle className="font-display flex items-center gap-2">
-                <Sparkles className="h-5 w-5 text-[hsl(var(--gold))]" /> Subir un nuevo reel
+                <Sparkles className="h-5 w-5 text-[hsl(var(--gold))]" /> Subir un nuevo homee
               </DialogTitle>
             </DialogHeader>
             <div className="space-y-4">
@@ -115,7 +115,7 @@ export default function Reels() {
               </div>
               <div className="flex justify-end gap-2 pt-2">
                 <Button variant="outline" onClick={() => setUploadOpen(false)}>Cancelar</Button>
-                <Button variant="hero" onClick={handlePublish} disabled={!file}>Publicar reel</Button>
+                <Button variant="hero" onClick={handlePublish} disabled={!file}>Publicar homee</Button>
               </div>
             </div>
           </DialogContent>

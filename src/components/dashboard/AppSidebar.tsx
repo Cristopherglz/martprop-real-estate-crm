@@ -12,7 +12,7 @@ import { cn } from "@/lib/utils";
 const main = [
   { to: "/dashboard", label: "Inicio", icon: LayoutDashboard, end: true },
   { to: "/dashboard/propiedades", label: "Propiedades", icon: Home },
-  { to: "/reels", label: "Reels", icon: Video },
+  { to: "/reels", label: "Homees", icon: Video },
   { to: "/dashboard/leads", label: "Leads", icon: MessageSquare },
   { to: "/dashboard/agenda", label: "Agenda", icon: Calendar },
   { to: "/dashboard/estadisticas", label: "Estadísticas", icon: BarChart3 },
