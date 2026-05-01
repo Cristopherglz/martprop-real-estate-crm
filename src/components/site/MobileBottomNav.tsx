@@ -6,7 +6,7 @@ const items = [
   { to: "/", label: "Inicio", icon: Home, end: true },
   { to: "/buscar", label: "Buscar", icon: Search },
   { to: "/dashboard/publicar", label: "Publicar", icon: PlusCircle, primary: true },
-  { to: "/reels", label: "Reels", icon: Video },
+  { to: "/reels", label: "Homees", icon: Video },
   { to: "/login", label: "Cuenta", icon: User },
 ];
 
