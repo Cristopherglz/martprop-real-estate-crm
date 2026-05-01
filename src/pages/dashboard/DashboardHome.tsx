@@ -1,4 +1,4 @@
-import { TrendingUp, TrendingDown, Eye, MessageSquare, Home, DollarSign, ArrowUpRight } from "lucide-react";
+import { TrendingUp, TrendingDown, Eye, MessageSquare, HouseHeart, DollarSign, ArrowUpRight } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -8,7 +8,7 @@ import { properties, formatPrice } from "@/data/properties";
 const stats = [
   { label: "Vistas (30d)", value: "12.482", delta: "+18.3%", up: true, icon: Eye },
   { label: "Leads recibidos", value: "342", delta: "+24.1%", up: true, icon: MessageSquare },
-  { label: "Propiedades activas", value: "47", delta: "+3", up: true, icon: Home },
+  { label: "Propiedades activas", value: "47", delta: "+3", up: true, icon: HouseHeart },
   { label: "Operaciones cerradas", value: "8", delta: "-2", up: false, icon: DollarSign },
 ];
 
