@@ -102,7 +102,7 @@ export default function ReelsRail() {
         <div className="flex items-end justify-between gap-4 flex-wrap mb-8">
           <div>
             <Badge className="bg-white/15 text-primary-foreground border-white/20 mb-3">
-              <Video className="h-3 w-3 mr-1" /> Nuevo · MartProp Reels
+              <Video className="h-3 w-3 mr-1" /> Nuevo · MartProp Homees
             </Badge>
             <h2 className="font-display text-3xl md:text-5xl font-bold text-balance">
               Tours en video, <span className="text-[hsl(var(--gold))]">en segundos</span>
