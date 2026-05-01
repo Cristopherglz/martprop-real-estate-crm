@@ -6,6 +6,7 @@ import { cn } from "@/lib/utils";
 
 const links = [
   { to: "/buscar", label: "Buscar" },
+  { to: "/reels", label: "Reels" },
   { to: "/publicar", label: "Publicar" },
   { to: "/empresas", label: "Para inmobiliarias" },
   { to: "/precios", label: "Precios" },
